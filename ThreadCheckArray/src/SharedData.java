@@ -11,20 +11,12 @@ public class SharedData
 	private boolean flag;
 	private final int b;
 	
-<<<<<<< HEAD
+
 	/** constructor
 	 * @param array arrayList for integers 
 	 * @param b the number we are investigating
 	 */
 	public SharedData(ArrayList<Integer> array, int b) {
-=======
-	/**
-	 * @param array
-	 * @param b
-	 */
-	public SharedData(int[] array, int b) {
->>>>>>> branch 'master' of https://github.com/haddadbasel54/new-repo.git
-		
 		this.array = array;
 		this.b = b;
 	}
