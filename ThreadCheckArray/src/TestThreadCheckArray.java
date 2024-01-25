@@ -1,16 +1,24 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
+/**Description of TestThreadCheckArray 
+ * @author Basel Haddad
+ * @author Bar Leibovich
+ */
 public class TestThreadCheckArray {
+	/** Main function manages the whole project and test's and print the output
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		try (Scanner input = new Scanner(System.in)) {
 			Thread thread1, thread2;
 			System.out.println("Enter array size");
 			int num  = input.nextInt();
-			int [] array = new int[num];
+			ArrayList<Integer> array = new ArrayList<Integer>(num);
 			System.out.println("Enter numbers for array");
 			
 			for (int index = 0; index < num; index++) 
-				array[index] = input.nextInt();
+				array.set(index,input.nextInt());
 			
 			System.out.println("Enter number");
 			num = input.nextInt();
